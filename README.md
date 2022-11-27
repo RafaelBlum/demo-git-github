@@ -91,8 +91,6 @@ git push
 git reflog
 ```
 
-### Comando avançados Git
-
 <sub>Como voltar para alguma alteração commitada `voltar na sua linha do tempo`</sub>
 
 ```
@@ -100,10 +98,50 @@ git reflog
 git reset --hard id_commit
 ```
 
+### Comando avançados Git - Branchs
+###### Trabalhando nas linhas do tempo
+
+<p align="center">
+	<a href="#" title="git-github">
+		<img src="imges/machine-git.jpg" alt="time machine" width="350">
+	</a>
+</p>
+
+Como podemos ver, trabalhar com git é como se estivessemos em uma máquina do tempo, onde podemos voltar na nossa linha do 
+tempo, o que chamamos de commits, voltando no inicio do projeto ou em qulquer momento.
+
+Agora vamos utilizar outro poder do tempo, o poder de criar uma linha do tempo em paralelo, o que chamamos de branchs.
+Estas linhas, branchs, usamos quando vamos desenvolver uma feature nova ou quando vamos trabalhar em equipe, pois assim
+todos podemos trabalhar em uma parte do projeto sem que haja problemas em nosso projeto que está funcionando corretamente.
+
+<sup>Verificar qual branch esta ativo e quais existem</sup>
+
 ```
+git branch
+```
+
+<sup>Como criar um branch `linha do tempo`</sup>
+
+```
+git branch new_feature
+```
+
+<sup>Como passar para uma branch `linha do tempo`</sup>
+
+```
+git checkout new_feature
+git branch
+```
+
+<p align="center">
+	<a href="#" title="git-github">
+		<img src="imges/time-line.png" alt="time machine" width="350">
+	</a>
+</p>
 
 ```
 
+```
 
 <br>
 
