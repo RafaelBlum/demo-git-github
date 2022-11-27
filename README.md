@@ -88,7 +88,10 @@ git push
 
 <sub>Como ver histórico de commits</sub>
 ```
+git log
 git reflog
+git log --stat
+git log --oneline
 ```
 
 <sub>Como voltar para alguma alteração commitada `voltar na sua linha do tempo`</sub>
@@ -135,7 +138,7 @@ git branch
 
 <p align="center">
 	<a href="#" title="git-github">
-		<img src="imges/time-line.png" alt="time machine" width="350">
+		<img src="imges/time-line.png" alt="time machine" width="450">
 	</a>
 </p>
 
