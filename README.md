@@ -71,6 +71,35 @@ git branch -M main
 git push -u origin main
 ```
 
+Como enviar as alterações realizadas no seu projeto.
+
+```
+git status
+git add .
+git commit -m "Alterações na feature x"
+git push
+```
+
+<sub>Mensagens de pré e pós commits</sub>
+
+- Untracked files `Arquivos não rastreados no controle de vesão`
+- Changes to be committed `Arquivos rastreados no controle de versão`
+- Changes not staged for committed `Arquivo rastreado e commitado`
+
+### Comando avançados Git
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
 
 <br>
 
