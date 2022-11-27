@@ -93,8 +93,11 @@ git reflog
 
 ### Comando avançados Git
 
-```
+<sub>Como voltar para alguma alteração commitada `voltar na sua linha do tempo`</sub>
 
+```
+git reflog
+git reset --hard id_commit
 ```
 
 ```
