@@ -84,13 +84,14 @@ git push
 
 - Untracked files `Arquivos não rastreados no controle de vesão`
 - Changes to be committed `Arquivos rastreados no controle de versão`
-- Changes not staged for committed `Arquivo rastreado e commitado`
+- Changes not staged for committed `Arquivos rastreados, mas com alterações`
+
+<sub>Como ver histórico de commits</sub>
+```
+git reflog
+```
 
 ### Comando avançados Git
-
-```
-
-```
 
 ```
 
