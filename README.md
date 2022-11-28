@@ -178,17 +178,21 @@ Remover branch local
 Git branch –D branch-name
 ```
 
-<sup>Como fazer Git Merge</sup>
+<sup>Como fazer Git Merge e pull</sup>
 
-```
-
-```
-
-<sup>PULL – git</sup>
-Atualiza os commits, caso o projeto no github esta com estado diferente do estado local.
+Antes de fazer o `merge` é importante fazer um `pull` no projeto `remoto Github`, puxando e atulizando para o projeto local, pois
+pode acontecer de outro desenvolvedor tenha modificado algo, então na branch `main`.
 
 ```
 git pull origin branch-name
+git push --set-upstream origin branch-name
+```
+
+Agora sim, podemos fazer o merge
+
+```
+git branch
+git merge branch_name
 ```
 
 <br>
