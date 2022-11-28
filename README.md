@@ -86,12 +86,28 @@ git push
 - Changes to be committed `Arquivos rastreados no controle de versão`
 - Changes not staged for committed `Arquivos rastreados, mas com alterações`
 
-<sub>Como ver histórico de commits</sub>
+<sub>Como ver histórico de commits e alterações</sub>
 ```
 git log
 git reflog
 git log --stat
 git log --oneline
+```
+
+
+<sup>Mostra o conteúdo que foi alterado, mas antes do commit</sup>
+```
+gif diff
+```
+
+<sup>Mostra arquivo que foi alterado, mas antes do commit</sup>
+```
+gif diff --name-only
+```
+
+<sup>Remove alterações realizadas em algum arquivo especifico</sup>
+```
+git checkout HEAD -- style.css
 ```
 
 <sub>Como voltar para alguma alteração commitada `voltar na sua linha do tempo`</sub>
@@ -110,12 +126,14 @@ git reset --hard id_commit
 	</a>
 </p>
 
-Como podemos ver, trabalhar com git é como se estivessemos em uma máquina do tempo, onde podemos voltar na nossa linha do 
-tempo, o que chamamos de commits, voltando no inicio do projeto ou em qulquer momento.
+Como podemos ver, trabalhar com git é como se estivessemos em uma `máquina do tempo`, onde `podemos voltar` na nossa linha do 
+tempo, o que chamamos de `commits`, voltando no inicio do projeto ou em qulquer momento.
 
-Agora vamos utilizar outro poder do tempo, o poder de criar uma linha do tempo em paralelo, o que chamamos de branchs.
-Estas linhas, branchs, usamos quando vamos desenvolver uma feature nova ou quando vamos trabalhar em equipe, pois assim
+Agora vamos utilizar outro poder do tempo, o poder de criar uma `linha do tempo em paralelo`, o que chamamos de `branchs`.
+Estas linhas, branchs, usamos quando vamos desenvolver uma feature nova ou quando vamos `trabalhar em equipe`, pois assim
 todos podemos trabalhar em uma parte do projeto sem que haja problemas em nosso projeto que está funcionando corretamente.
+
+> Desta forma, podemos ter um desenvolvedor trabalhando na branch 2, na página de produtos e outro desenvolvedor trabalhando na branch 1, com a Home.
 
 <sup>Verificar qual branch esta ativo e quais existem</sup>
 
@@ -142,8 +160,35 @@ git branch
 	</a>
 </p>
 
+Agora temos duas linhas do tempo `main` e `new_feature`.
+
+Podemos subir mais uma Branch para github (remoto).
+```
+Git push origin branch-name
 ```
 
+Remover uma branch remoto
+```
+Git push origin :branch-name
+```
+
+
+Remover branch local
+```
+Git branch –D branch-name
+```
+
+<sup>Como fazer Git Merge</sup>
+
+```
+
+```
+
+<sup>PULL – git</sup>
+Atualiza os commits, caso o projeto no github esta com estado diferente do estado local.
+
+```
+git pull origin branch-name
 ```
 
 <br>
