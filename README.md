@@ -201,6 +201,16 @@ git merge branch_name
 	</a>
 </p>
 
+`Ex:` Uma empresa pede para o deve `criar um sistema de login`, mas ele não pode afetar o sistema principal ou o desenvolvimento
+dos outros desenvolvedores.
+
+```
+git checkout -b sistema-de-login main
+git checkout main
+git pull
+git merge sistema-de-login
+```
+
 <br>
 
 Contato [rafaelblum_digital@hotmail.com](rafaelblum_digital@hotmail.com)
