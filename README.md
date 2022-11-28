@@ -201,8 +201,8 @@ git merge branch_name
 	</a>
 </p>
 
-`Ex:` Uma empresa pede para o deve `criar um sistema de login`, mas ele não pode afetar o sistema principal ou o desenvolvimento
-dos outros desenvolvedores.
+`Ex:` Uma empresa pede para o desenvolvedor `criar um sistema de login`, mas ele não pode afetar o sistema principal ou o desenvolvimento
+dos outros desenvolvedores. E ao finalizar, ele deve passar seu código para um `pull request`.
 
 ```
 git checkout -b sistema-de-login main
