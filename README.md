@@ -195,6 +195,12 @@ git branch
 git merge branch_name
 ```
 
+<p align="center">
+	<a href="#" title="merge">
+		<img src="imges/merger.png" alt="merge" width="350">
+	</a>
+</p>
+
 <br>
 
 Contato [rafaelblum_digital@hotmail.com](rafaelblum_digital@hotmail.com)
