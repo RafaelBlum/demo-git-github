@@ -211,6 +211,14 @@ git pull
 git merge sistema-de-login
 ```
 
+Depois de pronta a nova feature e enviada a branch nova para github, você no github, vai criar uma pull request que será aprovada ou não pela equipe.
+
+<p align="center">
+	<a href="#" title="merge">
+		<img src="imges/pullrequest.png" alt="merge" width="550">
+	</a>
+</p>
+
 <br>
 
 Contato [rafaelblum_digital@hotmail.com](rafaelblum_digital@hotmail.com)
