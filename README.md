@@ -197,7 +197,7 @@ git merge branch_name
 
 <p align="center">
 	<a href="#" title="merge">
-		<img src="imges/merger.png" alt="merge" width="350">
+		<img src="imges/merger.png" alt="merge" width="650">
 	</a>
 </p>
 
