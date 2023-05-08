@@ -204,11 +204,20 @@ git merge branch_name
 `Ex:` Uma empresa pede para o desenvolvedor `criar um sistema de login`, mas ele não pode afetar o sistema principal ou o desenvolvimento
 dos outros desenvolvedores. E ao finalizar, ele deve passar seu código para um `pull request`.
 
+Se você quiser `criar um branch e fazer o checkout` ao mesmo tempo, use o comando git checkout. O parâmetro `-b` especifica o nome do branch.
+
+Criou um nova branch `copiando a main`
 ```
 git checkout -b sistema-de-login main
+```
+
+Agora alteramos para a branch que queremos atualizar `merge`.
+
+```
 git checkout main
 git pull
 git merge sistema-de-login
+git push
 ```
 
 Depois de pronta a nova feature e enviada a branch nova para github, você no github, vai criar uma pull request que será aprovada ou não pela equipe.
