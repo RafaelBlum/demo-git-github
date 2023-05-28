@@ -26,7 +26,7 @@ Para trabalhar com controle de versão, você vai precisar:
 
 ## Versionando projeto e subir no github
 
-<p>É importante nos identificarmos para o Git, informando nosso nome e e-mail. Em um terminal, execute os comandos a seguir</p>
+<p>É importante nos identificarmos para o Git, Definindo nome de usuario e endereço de e-mail para os commits.</p>
 
 - git config --global user.name "Fulano da Silva"
 - git config --global user.email fulanodasilva.git@gmail.com
@@ -34,6 +34,12 @@ Para trabalhar com controle de versão, você vai precisar:
 
 <p>Iniciando repositório local</p>
 
+- O `git init` é o primeiro comando que devemos realizar para iniciar o controle de versão, pois é com este comando,
+que iniciamos o repositório local.
+- O `git status` verifica o status atual do repositório criado para o projeto.
+- O `git log` verifica e passa uma lista de todos commits realizado no repositório e com varios dados como `hash` do commit, autor, data `branch`.
+- O `git add` coloca os arquivos não preparados, monitorados na área de preparação `staging area`. E o add pode ser arquivo por arquivo `git add name.txt` ou todos `git add .`.
+- O `git commit -m "message"` registra alterações no repositório git salvando uma mensagem de log junto com um `id hash` do commit.
 ```
 git init
 git status
