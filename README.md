@@ -24,13 +24,15 @@ Para trabalhar com controle de versão, você vai precisar:
 <br>
 
 
-## Versionando projeto e subir no github
+#### Configurações de variaveis globais
 
 <p>É importante nos identificarmos para o Git, Definindo nome de usuario e endereço de e-mail para os commits.</p>
 
 - git config --global user.name "Fulano da Silva"
 - git config --global user.email fulanodasilva.git@gmail.com
 - Pode verificar todos dados com comando `git config –list`.
+
+### Comandos basicos para versionamento de repositório local para github
 
 <p>Iniciando repositório local</p>
 
@@ -47,6 +49,8 @@ git log
 git add .
 git commit -m "first commit"
 ```
+
+#### Criando conexão git e github com chave SSH
 
 <p>Para subir o projeto no Github é importando criar um chave SSH na sua conta</p>
 
@@ -68,6 +72,22 @@ Agora basta copiar a chave e depois ir na sua conta no github para criar a nova 
 ```
 clip < ~/.ssh/id_ed25519.pub
 ```
+
+### Iniciando repositório local para subir no servidor github
+
+Como `clonar` um repositório do servidor do `github`? 
+- Adicionamos o comando `git clone ` + `ssh code` do repositório github. Conforme abaixo, vamos baixar o projeto em um diretório.
+
+```
+git clone git@github.com:RafaelBlum/demo-git-github.git
+```
+
+- Podemos também definir uma pasta ao clonar um repositório.
+
+```
+git clone git@github.com:RafaelBlum/demo-git-github.git nomeDiretório
+```
+
 
 Depois de cria a chave, basta criar um repositório no github e seguir os comandos abaixo.
 
