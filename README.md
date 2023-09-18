@@ -462,6 +462,11 @@ git checkout new_feature
 git branch
 ```
 
+ou podemos criar a branch e já passr para ela.
+```
+git checkout -b new_feature
+``
+
 <p align="center">
 	<a href="#" title="git-github">
 		<img src="imges/time-line.png" alt="time machine" width="450">
