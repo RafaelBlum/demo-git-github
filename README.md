@@ -463,9 +463,10 @@ git branch
 ```
 
 ou podemos criar a branch e já passr para ela.
+
 ```
 git checkout -b new_feature
-``
+```
 
 <p align="center">
 	<a href="#" title="git-github">
