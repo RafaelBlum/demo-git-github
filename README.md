@@ -7,21 +7,18 @@
 <p align="center">Demo trabalhando com versionamento em seus projetos</p>
 
 
-# Introdução
+# Introdução 📜
 
 Projeto com objetivo de mostrar o `funcionamento do sistemas de controle de versão Git`, com seus comandos `basicos` aos `avançado`, conecxão
 com github via chave `SSH` e como `subir os projetos para github` e suas alteraões.
 <br>
 
-## Installation
+#### Installation
 
 Para trabalhar com controle de versão, você vai precisar:
 
 > Instalar o [`Git`](https://git-scm.com/)
 > Criar uma conta no [`GitHub`](https://github.com/)
-
-
-<br>
 
 
 #### Configurações de variaveis globais
@@ -33,13 +30,54 @@ Para trabalhar com controle de versão, você vai precisar:
 - Pode verificar todos dados com comando `git config –list`.
 
 
+#### Comandos basicos para versionamento de repositório local para github
+
+<p>Iniciando repositório local</p>
+
+- O `git init` é o primeiro comando que devemos realizar para iniciar o controle de versão, pois é com este comando,
+que iniciamos o repositório local.
+- O `git status` verifica o status atual do repositório criado para o projeto.
+- O `git log` verifica e passa uma lista de todos commits realizado no repositório e com varios dados como `hash` do commit, autor, data `branch`.
+- O `git add` coloca os arquivos não preparados, monitorados na área de preparação `staging area`. E o add pode ser arquivo por arquivo `git add name.txt` ou todos `git add .`.
+- O `git commit -m ":tada: Commit message"` registra alterações no repositório git salvando uma mensagem de log junto com um `id hash` do commit.
+```
+git init
+git status
+git log
+git add .
+git commit -m ":tada: first commit"
+```
+
+#### Criando conexão git e github com chave SSH
+
+<p>Para subir o projeto no Github é importando criar um chave SSH na sua conta</p>
+
+> Documentação do Github [`GitHUb`](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows)
+
+<p>Com o Git Bash aberto</p>
+
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+Quando você for solicitado a `Inserir um arquivo no qual salvar a chave`, pressione `Enter` para aceitar o local padrão 
+do arquivo.Observe que, se você criou chaves SSH anteriormente, o ssh-keygen pode solicitar que você reescreva outra chave; 
+nesse caso, recomendo a criação de uma chave SSH com nome personalizado. Para fazer isso, digite o local padrão 
+do arquivo e substitua id_ssh_keyname pelo nome de sua chave personalizada.
+
+Agora basta copiar a chave e depois ir na sua conta no github para criar a nova chave SSH.
+
+```
+clip < ~/.ssh/id_ed25519.pub
+```
+
 # Padrões de commits 📜
 De acordo com a documentação do **[Conventional Commits](https://www.conventionalcommits.org/pt-br)**, commits semânticos 
 são uma convenção simples para ser utilizada nas mensagens de commit. Essa convenção define um conjunto de regras para 
 criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas. Esses commits auxiliarão 
 você e sua equipe a entenderem de forma facilitada quais alterações foram realizadas no trecho de código que foi commitado.
 
-## Tipo e descrição 🦄
+#### Tipo e descrição
 
 O commit semântico possui os elementos estruturais abaixo (tipos), que informam a intenção do seu commit ao utilizador(a) de seu código.
 
@@ -64,8 +102,7 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 - `ci` - Commits do tipo ci indicam mudanças relacionadas a **integração contínua** (_continuous integration_).
 
 
-## Padrões de emojis 💈
-
+#### Padrões de emojis
 <table>
   <thead>
     <tr>
@@ -238,7 +275,7 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
   </tbody>
 </table>
 
-## 💻 Exemplos
+#### 💻 Exemplos
 
 <table>
   <thead>
@@ -318,49 +355,7 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 </table>
 
 
-
-### Comandos basicos para versionamento de repositório local para github
-
-<p>Iniciando repositório local</p>
-
-- O `git init` é o primeiro comando que devemos realizar para iniciar o controle de versão, pois é com este comando,
-que iniciamos o repositório local.
-- O `git status` verifica o status atual do repositório criado para o projeto.
-- O `git log` verifica e passa uma lista de todos commits realizado no repositório e com varios dados como `hash` do commit, autor, data `branch`.
-- O `git add` coloca os arquivos não preparados, monitorados na área de preparação `staging area`. E o add pode ser arquivo por arquivo `git add name.txt` ou todos `git add .`.
-- O `git commit -m ":tada: Commit message"` registra alterações no repositório git salvando uma mensagem de log junto com um `id hash` do commit.
-```
-git init
-git status
-git log
-git add .
-git commit -m ":tada: first commit"
-```
-
-#### Criando conexão git e github com chave SSH
-
-<p>Para subir o projeto no Github é importando criar um chave SSH na sua conta</p>
-
-> Documentação do Github [`GitHUb`](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows)
-
-<p>Com o Git Bash aberto</p>
-
-```
-ssh-keygen -t ed25519 -C "your_email@example.com"
-```
-
-Quando você for solicitado a `Inserir um arquivo no qual salvar a chave`, pressione `Enter` para aceitar o local padrão 
-do arquivo.Observe que, se você criou chaves SSH anteriormente, o ssh-keygen pode solicitar que você reescreva outra chave; 
-nesse caso, recomendo a criação de uma chave SSH com nome personalizado. Para fazer isso, digite o local padrão 
-do arquivo e substitua id_ssh_keyname pelo nome de sua chave personalizada.
-
-Agora basta copiar a chave e depois ir na sua conta no github para criar a nova chave SSH.
-
-```
-clip < ~/.ssh/id_ed25519.pub
-```
-
-### Iniciando repositório local para subir no servidor github
+# Iniciando repositório **local para subir no servidor github**
 
 Como `clonar` um repositório do servidor do `github`? 
 - Adicionamos o comando `git clone ` + `ssh code` do repositório github. Conforme abaixo, vamos baixar o projeto em um diretório.
