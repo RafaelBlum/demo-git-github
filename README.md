@@ -22,7 +22,7 @@ com github via chave `SSH`, para poder `subir os projetos para github`.
 > Criar uma conta no [`GitHub`](https://github.com/)
 
 
-#### :zap: Configurações de variaveis globais
+### :zap: Configurações de variaveis globais
 
 :books: É importante nos identificarmos para o Git, Definindo nome de usuario e endereço de e-mail para os commits.
 
@@ -31,9 +31,9 @@ com github via chave `SSH`, para poder `subir os projetos para github`.
 - Pode verificar todos dados com comando `git config –list`.
 
 
-#### :zap: Comandos basicos para versionamento de repositório local para github
+### :zap: Comandos basicos para versionamento de repositório local para github
 
-<p>Iniciando repositório local</p>
+:books: Iniciando repositório local
 
 - O `git init` é o primeiro comando que devemos realizar para iniciar o controle de versão, pois é com este comando,
 que iniciamos o repositório local.
@@ -41,38 +41,39 @@ que iniciamos o repositório local.
 - O `git log` verifica e passa uma lista de todos commits realizado no repositório e com varios dados como `hash` do commit, autor, data `branch`.
 - O `git add` coloca os arquivos não preparados, monitorados na área de preparação `staging area`. E o add pode ser arquivo por arquivo `git add name.txt` ou todos `git add .`.
 - O `git commit -m ":tada: Commit message"` registra alterações no repositório git salvando uma mensagem de log junto com um `id hash` do commit.
-```
-git init
-git status
-git log
-git add .
-git commit -m ":tada: first commit"
-```
-
-#### :zap: Criando conexão git e github com chave SSH
-
-<p>Para subir o projeto no Github é importando criar um chave SSH na sua conta</p>
-
-> Documentação do Github [`GitHUb`](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows)
-
-<p>Com o Git Bash aberto</p>
 
 ```
-ssh-keygen -t ed25519 -C "your_email@example.com"
+    git init
+    git status
+    git log
+    git add .
+    git commit -m ":tada: first commit"
 ```
 
-Quando você for solicitado a `Inserir um arquivo no qual salvar a chave`, pressione `Enter` para aceitar o local padrão 
+### :zap: Criando conexão git e github com chave SSH
+
+:books: Você pode usar SSH para realizar operações Git em repositórios em GitHub.com. Para obter mais informações, 
+consulte [Sobre SSH](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh) ou [add ssh key](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows). 
+Se você tiver uma chave SSH existente, poderá usá-la para autenticar operações do Git por SSH.
+
+> Com o Git Bash aberto execute:
+
+```
+    ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+:books: Quando você for solicitado a `Inserir um arquivo no qual salvar a chave`, pressione `Enter` para aceitar o local padrão 
 do arquivo.Observe que, se você criou chaves SSH anteriormente, o ssh-keygen pode solicitar que você reescreva outra chave; 
 nesse caso, recomendo a criação de uma chave SSH com nome personalizado. Para fazer isso, digite o local padrão 
 do arquivo e substitua id_ssh_keyname pelo nome de sua chave personalizada.
 
-Agora basta copiar a chave e depois ir na sua conta no github para criar a nova chave SSH.
+Agora basta `copiar a chave` e depois ir na sua conta no github para criar a nova chave SSH.
 
 ```
-clip < ~/.ssh/id_ed25519.pub
+    clip < ~/.ssh/id_ed25519.pub
 ```
 
-## Padrões de commits 📜
+## :pushpin: Padrões de commits
 De acordo com a documentação do **[Conventional Commits](https://www.conventionalcommits.org/pt-br)**, commits semânticos 
 são uma convenção simples para ser utilizada nas mensagens de commit. Essa convenção define um conjunto de regras para 
 criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas. Esses commits auxiliarão 
