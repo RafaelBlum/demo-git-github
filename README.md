@@ -7,13 +7,13 @@
 <p align="center">Demo trabalhando com versionamento em seus projetos</p>
 
 
-# Introdução 📜
+# :receipt: Introdução
 
-Projeto com objetivo de mostrar o `funcionamento do sistemas de controle de versão Git`, com seus comandos `basicos` aos `avançado`, conecxão
+:books: Projeto com objetivo de mostrar o `funcionamento do sistemas de controle de versão Git`, com seus comandos `basicos` aos `avançado`, conecxão
 com github via chave `SSH` e como `subir os projetos para github` e suas alteraões.
-<br>
 
-#### Installation
+
+## :pushpin: Installation
 
 Para trabalhar com controle de versão, você vai precisar:
 
