@@ -9,28 +9,29 @@
 
 # :receipt: Introdução
 
-:books: Projeto com objetivo de mostrar o `funcionamento do sistemas de controle de versão Git`, com seus comandos `basicos` aos `avançado`, conecxão
-com github via chave `SSH` e como `subir os projetos para github` e suas alteraões.
+:books: Projeto com objetivo de mostrar de forma básica o `funcionamento do sistemas de controle de versão com Git`, 
+seus comandos de inicialização de repositório local, commits, push, merge, pull e muitos outros. Vou também demonstrar a conecxão
+com github via chave `SSH`, para poder `subir os projetos para github`.
 
 
 ## :pushpin: Installation
 
-Para trabalhar com controle de versão, você vai precisar:
+:books: Para trabalhar com controle de versão, você vai precisar:
 
 > Instalar o [`Git`](https://git-scm.com/)
 > Criar uma conta no [`GitHub`](https://github.com/)
 
 
-#### Configurações de variaveis globais
+#### :zap: Configurações de variaveis globais
 
-<p>É importante nos identificarmos para o Git, Definindo nome de usuario e endereço de e-mail para os commits.</p>
+:books: É importante nos identificarmos para o Git, Definindo nome de usuario e endereço de e-mail para os commits.
 
 - git config --global user.name "Fulano da Silva"
 - git config --global user.email fulanodasilva.git@gmail.com
 - Pode verificar todos dados com comando `git config –list`.
 
 
-#### Comandos basicos para versionamento de repositório local para github
+#### :zap: Comandos basicos para versionamento de repositório local para github
 
 <p>Iniciando repositório local</p>
 
@@ -48,7 +49,7 @@ git add .
 git commit -m ":tada: first commit"
 ```
 
-#### Criando conexão git e github com chave SSH
+#### :zap: Criando conexão git e github com chave SSH
 
 <p>Para subir o projeto no Github é importando criar um chave SSH na sua conta</p>
 
@@ -71,13 +72,13 @@ Agora basta copiar a chave e depois ir na sua conta no github para criar a nova 
 clip < ~/.ssh/id_ed25519.pub
 ```
 
-# Padrões de commits 📜
+## Padrões de commits 📜
 De acordo com a documentação do **[Conventional Commits](https://www.conventionalcommits.org/pt-br)**, commits semânticos 
 são uma convenção simples para ser utilizada nas mensagens de commit. Essa convenção define um conjunto de regras para 
 criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas. Esses commits auxiliarão 
 você e sua equipe a entenderem de forma facilitada quais alterações foram realizadas no trecho de código que foi commitado.
 
-#### Tipo e descrição
+#### :zap: Tipo e descrição
 
 O commit semântico possui os elementos estruturais abaixo (tipos), que informam a intenção do seu commit ao utilizador(a) de seu código.
 
@@ -102,7 +103,7 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 - `ci` - Commits do tipo ci indicam mudanças relacionadas a **integração contínua** (_continuous integration_).
 
 
-#### Padrões de emojis
+#### :zap: Padrões de emojis
 <table>
   <thead>
     <tr>
@@ -355,7 +356,7 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 </table>
 
 
-# Iniciando repositório **local para subir no servidor github**
+## :zap: Iniciando repositório **local para subir no servidor github**
 
 Como `clonar` um repositório do servidor do `github`? 
 - Adicionamos o comando `git clone ` + `ssh code` do repositório github. Conforme abaixo, vamos baixar o projeto em um diretório.
@@ -425,7 +426,7 @@ git reflog
 git reset --hard id_commit
 ```
 
-### Comando avançados Git - Branchs
+### Branchs
 ###### Trabalhando nas linhas do tempo
 
 <p align="center">
