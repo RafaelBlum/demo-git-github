@@ -9,14 +9,14 @@
 
 # :receipt: Introdução
 
-:books: Projeto com objetivo de mostrar de forma básica o `funcionamento do sistemas de controle de versão com Git`, 
+󠁐Projeto com objetivo de mostrar de forma básica o `funcionamento do sistemas de controle de versão com Git`, 
 seus comandos de inicialização de repositório local, commits, push, merge, pull e muitos outros. Vou também demonstrar a conecxão
 com github via chave `SSH`, para poder `subir os projetos para github`.
 
 
 ## :pushpin: Installation
 
-:books: Para trabalhar com controle de versão, você vai precisar:
+:speech_balloon: Para trabalhar com controle de versão, você vai precisar:
 
 > Instalar o [`Git`](https://git-scm.com/)
 > Criar uma conta no [`GitHub`](https://github.com/)
@@ -24,7 +24,7 @@ com github via chave `SSH`, para poder `subir os projetos para github`.
 
 ### :zap: Configurações de variaveis globais
 
-:books: É importante nos identificarmos para o Git, Definindo nome de usuario e endereço de e-mail para os commits.
+:speech_balloon: É importante nos identificarmos para o Git, Definindo nome de usuario e endereço de e-mail para os commits.
 
 - git config --global user.name "Fulano da Silva"
 - git config --global user.email fulanodasilva.git@gmail.com
@@ -33,7 +33,7 @@ com github via chave `SSH`, para poder `subir os projetos para github`.
 
 ### :zap: Comandos basicos para versionamento de repositório local para github
 
-:books: Iniciando repositório local
+:speech_balloon: Iniciando repositório local
 
 - O `git init` é o primeiro comando que devemos realizar para iniciar o controle de versão, pois é com este comando,
 que iniciamos o repositório local.
@@ -50,10 +50,10 @@ que iniciamos o repositório local.
     git commit -m ":tada: first commit"
 ```
 
-### :zap: Criando conexão git e github com chave SSH
+### :key: Criando conexão git e github com chave SSH
 
-:books: Você pode usar SSH para realizar operações Git em repositórios em GitHub.com. Para obter mais informações, 
-consulte [Sobre SSH](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh) ou [add ssh key](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows). 
+:speech_balloon: Você pode usar SSH para realizar operações Git em repositórios em GitHub.com. Para obter mais informações, 
+consulte [Sobre SSH :old_key:](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh) ou [add ssh key](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows). 
 Se você tiver uma chave SSH existente, poderá usá-la para autenticar operações do Git por SSH.
 
 > Com o Git Bash aberto execute:
@@ -62,7 +62,7 @@ Se você tiver uma chave SSH existente, poderá usá-la para autenticar operaç�
     ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
-:books: Quando você for solicitado a `Inserir um arquivo no qual salvar a chave`, pressione `Enter` para aceitar o local padrão 
+:speech_balloon: Quando você for solicitado a `Inserir um arquivo no qual salvar a chave`, pressione `Enter` para aceitar o local padrão 
 do arquivo.Observe que, se você criou chaves SSH anteriormente, o ssh-keygen pode solicitar que você reescreva outra chave; 
 nesse caso, recomendo a criação de uma chave SSH com nome personalizado. Para fazer isso, digite o local padrão 
 do arquivo e substitua id_ssh_keyname pelo nome de sua chave personalizada.
@@ -74,14 +74,15 @@ Agora basta `copiar a chave` e depois ir na sua conta no github para criar a nov
 ```
 
 ## :pushpin: Padrões de commits
-De acordo com a documentação do **[Conventional Commits](https://www.conventionalcommits.org/pt-br)**, commits semânticos 
+
+:speech_balloon: De acordo com a documentação do **[Conventional Commits](https://www.conventionalcommits.org/pt-br)**, commits semânticos 
 são uma convenção simples para ser utilizada nas mensagens de commit. Essa convenção define um conjunto de regras para 
 criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas. Esses commits auxiliarão 
 você e sua equipe a entenderem de forma facilitada quais alterações foram realizadas no trecho de código que foi commitado.
 
 #### :zap: Tipo e descrição
 
-O commit semântico possui os elementos estruturais abaixo (tipos), que informam a intenção do seu commit ao utilizador(a) de seu código.
+:speech_balloon: O commit semântico possui os elementos estruturais abaixo (tipos), que informam a intenção do seu commit ao utilizador(a) de seu código.
 
 - `feat`- Commits do tipo feat indicam que seu trecho de código está incluindo um **novo recurso** (se relaciona com o MINOR do versionamento semântico).
 
@@ -359,76 +360,77 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 
 ## :zap: Iniciando repositório **local para subir no servidor github**
 
-Como `clonar` um repositório do servidor do `github`? 
-- Adicionamos o comando `git clone ` + `ssh code` do repositório github. Conforme abaixo, vamos baixar o projeto em um diretório.
+#### Como `clonar` um repositório do servidor do `github`:question: 
+:speech_balloon: Adicionamos o comando `git clone ` + `ssh code` do repositório github. Conforme abaixo, vamos baixar o projeto em um diretório.
 
 ```
-git clone git@github.com:RafaelBlum/demo-git-github.git
+    git clone git@github.com:RafaelBlum/demo-git-github.git
 ```
 
-- Podemos também definir uma pasta ao clonar um repositório.
+:speech_balloon: Podemos também definir uma pasta ao clonar um repositório.
 
 ```
-git clone git@github.com:RafaelBlum/demo-git-github.git nomeDiretório
-```
-
-
-Depois de cria a chave, basta criar um repositório no github e seguir os comandos abaixo.
-
-```
-git remote add origin git@github.com:RafaelBlum/demo-git-github.git
-git branch -M main
-git push -u origin main
-```
-
-Como enviar as alterações realizadas no seu projeto.
-
-```
-git status
-git add .
-git commit -m "Alterações na feature x"
-git push
-```
-
-<sub>Mensagens de pré e pós commits</sub>
-
-- Untracked files `Arquivos não rastreados no controle de vesão`
-- Changes to be committed `Arquivos rastreados no controle de versão`
-- Changes not staged for committed `Arquivos rastreados, mas com alterações`
-
-<sub>Como ver histórico de commits e alterações</sub>
-```
-git log
-git reflog
-git log --stat
-git log --oneline
+    git clone git@github.com:RafaelBlum/demo-git-github.git nomeDiretório
 ```
 
 
-<sup>Mostra o conteúdo que foi alterado, mas antes do commit</sup>
+:speech_balloon: Depois de cria a chave, basta criar um repositório no github e seguir os comandos abaixo.
+
+```
+    git remote add origin git@github.com:RafaelBlum/demo-git-github.git
+    git branch -M main
+    git push -u origin main
+```
+
+:speech_balloon: Como enviar as alterações realizadas no seu projeto.
+
+```
+    git status
+    git add .
+    git commit -m "Alterações na feature x"
+    git push
+```
+
+#### Mensagens de pré e pós commits</sub>
+
+- :heavy_check_mark: Untracked files `Arquivos não rastreados no controle de vesão`
+- :heavy_check_mark: Changes to be committed `Arquivos rastreados no controle de versão`
+- :heavy_check_mark: Changes not staged for committed `Arquivos rastreados, mas com alterações`
+
+#### Histórico de commits e alterações
+```
+    git log
+    git reflog
+    git log --stat
+    git log --oneline
+```
+
+
+#### Mostra o conteúdo que foi alterado, mas antes do commit
 ```
 gif diff
 ```
 
-<sup>Mostra arquivo que foi alterado, mas antes do commit</sup>
+#### Mostra arquivo que foi alterado, mas antes do commit
 ```
 gif diff --name-only
 ```
 
-<sup>Remove alterações realizadas em algum arquivo especifico</sup>
+#### Remove alterações realizadas em algum arquivo especifico
 ```
 git checkout HEAD -- style.css
 ```
 
-<sub>Como voltar para alguma alteração commitada `voltar na sua linha do tempo`</sub>
+#### Como voltar para alguma alteração commitada `voltar na sua linha do tempo`
 
 ```
 git reflog
 git reset --hard id_commit
 ```
 
-### Branchs
-###### Trabalhando nas linhas do tempo
+## :zap: Branchs
+
+#### Trabalhando nas linhas do tempo.
 
 <p align="center">
 	<a href="#" title="git-github">
@@ -436,7 +438,7 @@ git reset --hard id_commit
 	</a>
 </p>
 
-Como podemos ver, trabalhar com git é como se estivessemos em uma `máquina do tempo`, onde `podemos voltar` na nossa linha do 
+:speech_balloon: Como podemos ver, trabalhar com git é como se estivessemos em uma `máquina do tempo`, onde `podemos voltar` na nossa linha do 
 tempo, o que chamamos de `commits`, voltando no inicio do projeto ou em qulquer momento.
 
 Agora vamos utilizar outro poder do tempo, o poder de criar uma `linha do tempo em paralelo`, o que chamamos de `branchs`.
@@ -445,26 +447,26 @@ todos podemos trabalhar em uma parte do projeto sem que haja problemas em nosso 
 
 > Desta forma, podemos ter um desenvolvedor trabalhando na branch 2, na página de produtos e outro desenvolvedor trabalhando na branch 1, com a Home.
 
-<sup>Verificar qual branch esta ativo e quais existem</sup>
+#### Verificar qual branch esta ativo e quais existem
 
 ```
 git branch
 ```
 
-<sup>Como criar um branch `linha do tempo`</sup>
+#### Como criar um branch `linha do tempo`
 
 ```
 git branch new_feature
 ```
 
-<sup>Como passar para uma branch `linha do tempo`</sup>
+#### Como passar para uma branch `linha do tempo`
 
 ```
 git checkout new_feature
 git branch
 ```
 
-ou podemos criar a branch e já passr para ela.
+##### ou podemos criar a branch e já passr para ela.
 
 ```
 git checkout -b new_feature
@@ -476,27 +478,26 @@ git checkout -b new_feature
 	</a>
 </p>
 
-Agora temos duas linhas do tempo `main` e `new_feature`.
+:speech_balloon: Agora temos duas linhas do tempo `main` e `new_feature`. Podemos subir mais uma Branch para github (remoto).
 
-Podemos subir mais uma Branch para github (remoto).
 ```
 Git push origin branch-name
 ```
 
-Remover uma branch remoto
+#### Remover uma branch remoto
 ```
 Git push origin :branch-name
 ```
 
 
-Remover branch local
+#### Remover branch local
 ```
 Git branch –D branch-name
 ```
 
-<sup>Como fazer Git Merge e pull</sup>
+#### Como fazer Git Merge e pull
 
-Antes de fazer o `merge` é importante fazer um `pull` no projeto `remoto Github`, puxando e atulizando para o projeto local, pois
+:speech_balloon: Antes de fazer o `merge` é importante fazer um `pull` no projeto `remoto Github`, puxando e atulizando para o projeto local, pois
 pode acontecer de outro desenvolvedor tenha modificado algo, então na branch `main`.
 
 ```
@@ -544,8 +545,9 @@ Depois de pronta a nova feature e enviada a branch nova para github, você no gi
 	</a>
 </p>
 
-Pull - `Trabalhando na mesma branch`
-Algumas vezes podemos trabalhar na mesma branch e computadores dferentes ou com outros usuários e antes de iniciair, precisamos
+## :zap: Pull - `Trabalhando na mesma branch`
+
+:speech_balloon: Algumas vezes podemos trabalhar na mesma branch e computadores dferentes ou com outros usuários e antes de iniciair, precisamos
 atualizar o código para o atual no github, conforme os commits forem sendo realizados.
 
 O comando abaixo do `git atualizar os arquivos do repositório remoto`.
@@ -554,14 +556,14 @@ Execute:
     git pull
 ```
 
-Caso o git pull gere uma mensagem:
+Caso o git pull gere uma :x:mensagem:x:
 
->error: Your local changes to the following files would be overwritten by merge
+>error:x:: Your local changes to the following files would be overwritten by merge
 >...
 >Please commit your changes or stash them before you merge.
 >Aborting
 
-A `solução` que pode ser feita: Utilizar um `git stash` para gravar o estado atual do seu repositório local, revertendo os 
+A :heavy_check_mark: `solução` que pode ser feita: Utilizar um `git stash` para gravar o estado atual do seu repositório local, revertendo os 
 arquivos para o estado atual do repositório remoto.
 
 ```
