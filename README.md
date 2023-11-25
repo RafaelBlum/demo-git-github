@@ -542,6 +542,34 @@ Depois de pronta a nova feature e enviada a branch nova para github, você no gi
 	</a>
 </p>
 
+Pull - `Trabalhando na mesma branch`
+Algumas vezes podemos trabalhar na mesma branch e computadores dferentes ou com outros usuários e antes de iniciair, precisamos
+atualizar o código para o atual no github, conforme os commits forem sendo realizados.
+
+O comando abaixo do `git atualizar os arquivos do repositório remoto`.
+Execute:
+```
+    git pull
+```
+
+Caso o git pull gere uma mensagem:
+
+>error: Your local changes to the following files would be overwritten by merge
+>...
+>Please commit your changes or stash them before you merge.
+>Aborting
+
+A `solução` que pode ser feita: Utilizar um `git stash` para gravar o estado atual do seu repositório local, revertendo os 
+arquivos para o estado atual do repositório remoto.
+
+```
+ git stash push --include-untracked
+```
+E agora sim o `pull irá funcionar`:
+```
+ git pull
+```
+
 <br>
 
 ### Contatos
