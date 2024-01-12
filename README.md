@@ -576,6 +576,94 @@ E agora sim o `pull irá funcionar`:
 
 <br>
 
+#### 💻 Comandos indice gerais
+
+<table>
+  <thead>
+    <tr>
+      <th>Comando Git</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+ <tbody>
+    <tr>
+      <td>
+        <code>git init</code>
+      </td>
+      <td>:label: cria novo repositório local</td></td>
+    </tr>
+   <tr>
+      <td>
+        <code>git clone http://repositorio-exemple.git </code>
+      </td>
+      <td>:label: copia repositório local </td></td>
+    </tr>
+   <tr>
+      <td>
+        <code>git status </code>
+      </td>
+      <td>:label: Mostra arquivos alterados no diretório de trabalho </td></td>
+    </tr>
+   <tr>
+      <td>
+        <code>git diff </code>
+      </td>
+      <td>:label:  mudanças em arquivos rastreados</td></td>
+    </tr>
+   <tr>
+      <td>
+        <code>git add . </code>
+      </td>
+      <td>:label:  adiciona todas mudanças para o proximo commit</td></td>
+    </tr>
+   <tr>
+      <td>
+        <code>git add . -p < file ></code>
+      </td>
+      <td>:label: adiciona algumas mudanças destes arquivos para o commit </td></td>
+    </tr>
+   <tr>
+      <td>
+        <code>git commit -a </code>
+      </td>
+      <td>:label: Confirma todas alterações locais em arquivos rastreados </td></td>
+    </tr>
+   <tr>
+      <td>
+        <code>git commit </code>
+      </td>
+      <td>:label:  comfirma alterações</td></td>
+    </tr>
+   <tr>
+      <td>
+        <code>git commit --amend </code>
+      </td>
+      <td>:label:  muda o último commit</td></td>
+    </tr>
+   <tr>
+      <td>
+        <code>git log </code>
+      </td>
+      <td>:label:  Mostra todos commit iniciando pelo mais novo</td></td>
+    </tr>
+   <tr>
+      <td>
+        <code>git log -p < file > </code>
+      </td>
+      <td>:label:  mostra todas mudanças ao longo do tempo em um arquivo especific</td></td>
+    </tr>
+   <tr>
+      <td>
+        <code>git blade < file > </code>
+      </td>
+      <td>:label: Mostra que alterou, quem e quando </td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
 ### Contatos
 
 Contatos 👇🏼 [rafaelblum_digital@hotmail.com]
