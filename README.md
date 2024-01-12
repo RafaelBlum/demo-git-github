@@ -662,6 +662,83 @@ E agora sim o `pull irá funcionar`:
 </table>
 
 
+<table>
+  <thead>
+    <tr>
+      <th>Comando Git</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+ <tbody>
+    <tr>
+      <td>
+        <code>git branch -av</code>
+      </td>
+      <td>:label: Lista todas branchs existens</td></td>
+    </tr>
+<tr>
+      <td>
+        <code>git checkout < branch ></code>
+      </td>
+      <td>:label: Muda para a branch selecionada</td></td>
+    </tr>
+<tr>
+      <td>
+        <code>git branch < name-branch ></code>
+      </td>
+      <td>:label: cria uma branch</td></td>
+    </tr>
+<tr>
+      <td>
+        <code>git branch -D name-branch</code>
+      </td>
+      <td>:label: deleta branch</td></td>
+    </tr>
+<tr>
+      <td>
+        <code>git tag name</code>
+      </td>
+      <td>:label: cria uma tag</td></td>
+    </tr>
+<tr>
+      <td>
+        <code>git tag</code>
+      </td>
+      <td>:label:  mostra as tags, que representam algumas mudanças significativas no seu código</td></td>
+    </tr>
+<tr>
+      <td>
+        <code>git </code>
+      </td>
+      <td>:label: </td></td>
+    </tr>
+<tr>
+      <td>
+        <code>git </code>
+      </td>
+      <td>:label: </td></td>
+    </tr>
+<tr>
+      <td>
+        <code>git </code>
+      </td>
+      <td>:label: </td></td>
+    </tr>
+<tr>
+      <td>
+        <code>git </code>
+      </td>
+      <td>:label: </td></td>
+    </tr>
+<tr>
+      <td>
+        <code>git </code>
+      </td>
+      <td>:label: </td></td>
+    </tr>
+
+  </tbody>
+</table>
 
 
 ### Contatos
