@@ -50,11 +50,11 @@ que iniciamos o repositório local.
     git commit -m ":tada: first commit"
 ```
 
-### :key: Criando conexão git e github com chave SSH
+### :zap: Conexão git e github com chave SSH
 
 :speech_balloon: Você pode usar SSH para realizar operações Git em repositórios em GitHub.com. Para obter mais informações, 
 consulte [Sobre SSH :old_key:](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh) ou [add ssh key](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows). 
-Se você tiver uma chave SSH existente, poderá usá-la para autenticar operações do Git por SSH.
+Se você tiver uma chave :key: SSH existente, poderá usá-la para autenticar operações do Git por SSH.
 
 > Com o Git Bash aberto execute:
 
@@ -67,7 +67,8 @@ do arquivo.Observe que, se você criou chaves SSH anteriormente, o ssh-keygen po
 nesse caso, recomendo a criação de uma chave SSH com nome personalizado. Para fazer isso, digite o local padrão 
 do arquivo e substitua id_ssh_keyname pelo nome de sua chave personalizada.
 
-Agora basta `copiar a chave` e depois ir na sua conta no github para criar a nova chave SSH.
+Por fim, `precisa copiar a chave` para depois ir em sua conta no github para `criar a nova conexão SSH`. Obs: 
+`O comando abaixo você precisa estar no diretório certo para fazer o copy`.
 
 ```
     clip < ~/.ssh/id_ed25519.pub
@@ -80,7 +81,7 @@ são uma convenção simples para ser utilizada nas mensagens de commit. Essa co
 criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas. Esses commits auxiliarão 
 você e sua equipe a entenderem de forma facilitada quais alterações foram realizadas no trecho de código que foi commitado.
 
-#### :zap: Tipo e descrição
+### :zap: Tipo e descrição
 
 :speech_balloon: O commit semântico possui os elementos estruturais abaixo (tipos), que informam a intenção do seu commit ao utilizador(a) de seu código.
 
@@ -105,7 +106,7 @@ você e sua equipe a entenderem de forma facilitada quais alterações foram rea
 - `ci` - Commits do tipo ci indicam mudanças relacionadas a **integração contínua** (_continuous integration_).
 
 
-#### :zap: Padrões de emojis
+### :zap: Padrões de emojis
 <table>
   <thead>
     <tr>
@@ -278,7 +279,7 @@ você e sua equipe a entenderem de forma facilitada quais alterações foram rea
   </tbody>
 </table>
 
-#### 💻 Exemplos
+#### :test_tube: Exemplos
 
 <table>
   <thead>
@@ -358,9 +359,9 @@ você e sua equipe a entenderem de forma facilitada quais alterações foram rea
 </table>
 
 
-## :zap: Iniciando repositório **local para subir no servidor github**
+## :receipt: Iniciando repositório **local para subir no servidor github**
 
-#### Como `clonar` um repositório do servidor do `github`:question: 
+### :zap: Como `clonar` um repositório do servidor do `github`:question: 
 :speech_balloon: Adicionamos o comando `git clone ` + `ssh code` do repositório github. Conforme abaixo, vamos baixar o projeto em um diretório.
 
 ```
@@ -403,6 +404,11 @@ você e sua equipe a entenderem de forma facilitada quais alterações foram rea
     git reflog
     git log --stat
     git log --oneline
+```
+
+#### Alterando a mensagem do commit
+```
+gif diff
 ```
 
 
