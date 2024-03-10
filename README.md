@@ -405,10 +405,11 @@ você e sua equipe a entenderem de forma facilitada quais alterações foram rea
     git log --stat
     git log --oneline
 ```
-
 #### Alterando a mensagem do commit
+- Definindo `-m` você pode editar a mensagem sem abrir o editor
+
 ```
-gif diff
+git commit --amend -m "mensagem de correção aqui"
 ```
 
 
@@ -432,6 +433,14 @@ git checkout HEAD -- style.css
 ```
 git reflog
 git reset --hard id_commit
+```
+
+#### Revertendo um commit feito
+- É importante entender que git revert desfaz um único commit — ele 
+não "reverte" ao estado anterior de um projeto removendo todos os commits subsequentes. 
+- No Git, isso é chamado de redefinição, não de reversão.
+```
+git revert id_commit
 ```
 
 ## :zap: Branchs
